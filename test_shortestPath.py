@@ -1,14 +1,15 @@
 import pytest
-import main as m
+import 014305668 as m
 
 
 def test_program():
-    adj,srt,end,n = m.digestInput("shortInput.txt")
-    shortest,finalWeight = m.findShortestPath(adj,srt,end,n)
+    adj,srt,end,n,G,points = m.digestInput("input.txt","coords.txt",False)
+    shortest,finalWeights = m.findShortestPath(adj,srt,end,n,G,points,False)
+    m.writeOutFile(shortest,finalWeights)
     #for row in adj:
     #    print(row)
-    print(shortest,finalWeight)
+    #print(shortest)
+    #print(finalWeights)
+    
     
 
-def test_Pytest():
-    assert 1 == 1
