@@ -1,0 +1,5 @@
+Challenges so far:
+- I defaulted to using a Map for the adjacency list, but then after rereading the slides I switched to a matrix
+-I struggled a bit with the design of the program. I wasn't sure to just use a collection of methods, or put it into a class
+-I noticed that in the in-class explanation, once the node was popped off as visited, it went to the shortest path. but since there can be multiple shortest paths, I can't do that.
+    -
